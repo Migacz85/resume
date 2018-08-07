@@ -22,7 +22,7 @@ h1 {
    -webkit-box-shadow: 0px 10px 60px #777;
            box-shadow: 0px 10px 60px #777;
    font-size: 1, 1em;
-   margin-bottom:20px;
+    margin: 25px 0 43px; 
  }
  h2 {
    padding-bottom:20px;
@@ -63,6 +63,10 @@ li {
   color: white;
   padding-left:20px;
   width: 150px;
+}
+
+.compose-mailto {
+  width:auto;
 }
 
 .quote { display:none; }
