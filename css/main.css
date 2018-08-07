@@ -1,31 +1,36 @@
+/* All devices   */
+
 body {
   background-color: #EEE;
   font-family: 'Cinzel', sans-serif;
   font-size:1.4em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: lightgray;
   margin: 0px 0px 0px;
 }
 .quote { display:none; }
-.main-nav {
+nav {clear:both;}
 
+.main-nav {
   margin-top: 100px;
   left: 65vw;
   position: absolute;
-  display: block;blue
+  display: block;
 }
-
 .picture {
   height: 250px;
   width: 200px;
-  background-image: url("/Pictures/Marcin.jpg");
+  background-image: url("../Pictures/Marcin.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   margin-right: 40%;
   border-radius: 30px;
   float: right;
   margin-bottom: 20px;
-  box-shadow: 10px 10px 60px #777;
+  background-position:-30px -20px;
+  -webkit-box-shadow: 10px 10px 60px #777;
+          box-shadow: 10px 10px 60px #777;
   margin-left: 1px;
 }
 .wrapper {
@@ -33,9 +38,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.fa {
+  padding:10px;
+  border-radius: 50px;
+  background-color:#a6a6a6;
+  -webkit-transition: all  0.35 ease-in-out;
+  transition: all  0.35 ease-in-out;
+}
+
 .footer-wrapper {
 padding:40px;
 height:100%;
+
 text-align:center;
 background-color: var(--gray);
 margin: 0px;
@@ -43,17 +57,39 @@ margin: 0px;
 text-align: center;
 }
 
-p {margin:0;}
+p {
+  margin:10px;
+ }
 
-h2 {
-  clear: both;
-  margin: 0;
-  background-color: white;
-  padding: 25px 0px 25px ;
-  border-radius: 10px;
+ h1 {
+   text-indent: 10px;
+   color: #666666;
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px 60px;
+   background-color: white;
+   -webkit-box-shadow: 0px 10px 60px #777;
+           box-shadow: 0px 10px 60px #777;
+   font-size: 1, 1em;
+
+   margin-bottom:20px;
+ }
+ h2 {
+   padding-bottom:20px;
+   padding-top:20px;
+   clear: both;
+
+   background-color: white;
+   border-radius: 10px;
+
 }
+.container {width:100%;float:left;}
 .Display-content {
+  clear:both;
   width: 100%;
+
+  height:auto;
+  background-color: white;
   text-justify: inter-character;
 }
 article section {
@@ -78,18 +114,38 @@ a {
   text-decoration: none;
   color: white;
 }
-a:hover {
-color:white;
+a:focus, a:hover {
+  color:#76bbf8;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-footer li {margin-bottom:30px;}
+
 li {
   margin-bottom: 10px;
   display: inline-block;
   font-size: 1.2em;
   font-weight: bold;
   opacity: 1;
-  animation: mymove 0.6s;
   width: 150px;
+  /* margin: 0 20px 20px; */
+
+}
+.icons li {
+  margin-top: 40px;
+}
+footer div nav ul li {
+  width:150px;
+}
+footer div ul li {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 1;
+  width:auto;
+   margin: 0 25px 20px;
+
+
 }
 /* menu bar style*/
 
@@ -104,52 +160,36 @@ li {
 
 }
 
-h1 {
-  text-indent: 10px;
-  color: #666666;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px 60px;
-  background-color: white;
-  box-shadow: 0px 10px 60px #777;
-  font-size: 1, 1em;
-  margin:20px;
-  margin-bottom:20px;
-}
 
-p {
-  display:inline-block;
-}
 /* DESKTKOP */
 @media (min-width: 991px) {
  h1 {display:inline-block;}
   .quote {
-    margin-top: 120px;
+    width:50%;
+    margin-top: 100px;
     left: 35vw;
     position: absolute;
     display: block;
   }
 
   .main-nav {
-    width: 60%;
     margin-top: 100px;
-    left: 30vw;
+    left: 35vw;
     position: absolute;
     display: block;
-    text-align:center;
   }
 
   .picture {
     height: 250px;
     width: 200px;
-    background-image: url("/Pictures/Marcin.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     /* margin-right: 40%; */
     border-radius: 30px;
     float: left;
     margin-bottom: 20px;
-    box-shadow: 10px 10px 60px #777;
+    -webkit-box-shadow: 10px 10px 60px #777;
+            box-shadow: 10px 10px 60px #777;
     margin-left: 1px;
   }
 
@@ -159,12 +199,14 @@ p {
     margin-right: auto;
   }
 
+  .container {width:50%;float:left;}
+
 }
 /* TABLET; */
 @media (max-width: 991px) {
 h1 {display:inline-block;}
   .quote {
-    margin-top: 120px;
+    margin-top: 100px;
     left: 35vw;
     position: absolute;
     display: block;
@@ -178,15 +220,17 @@ h1 {display:inline-block;}
   .picture {
     height: 250px;
     width: 200px;
-    background-image: url("/Pictures/Marcin.jpg");
+
     background-size: auto;
     background-repeat: no-repeat;
     margin-right: 70%;
     border-radius: 30px;
     margin-bottom: 20px;
-    box-shadow: 10px 10px 60px #777;
+    -webkit-box-shadow: 10px 10px 60px #777;
+            box-shadow: 10px 10px 60px #777;
     margin-left: 1px;
   }
+  .container {width:50%;float:left;}
 }
  /* Mobile */
 @media (max-width: 767px) {
@@ -200,6 +244,7 @@ h1 {display:inline-block;}
   position: static;
   /* display: none; */
 }
+
 .main-nav {
   margin-top: 100px;
   left: 60vw;
@@ -210,14 +255,17 @@ h1 {display:inline-block;}
 .picture {
   height: 250px;
   width: 200px;
-  background-image: url("/Pictures/Marcin.jpg");
+
   background-size: auto;
   background-repeat: no-repeat;
   margin-right: 43%;
   border-radius: 30px;
   float: right;
   margin-bottom: 20px;
-  box-shadow: 10px 10px 60px #777;
+  -webkit-box-shadow: 10px 10px 60px #777;
+          box-shadow: 10px 10px 60px #777;
   margin-left: 1px;
 }
+
+.container {width:100%;float:left;}
 }
