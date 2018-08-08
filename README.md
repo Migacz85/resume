@@ -1,4 +1,4 @@
-# My resume business card
+# Resume business card
 
 Here is a small project of my business card
 
@@ -6,25 +6,26 @@ Here is a small project of my business card
 
 This website is for potential clients who want to:
 
--Know more about me and my Education
--Know about my Skills
--See on what actually I'm focusing on
--Schedule the meeting
--Write an email directly from website
+- Know more about me and my Education
+- Know about my Skills
+- See on what actually I'm focusing on
+- Schedule the meeting
+- Write an email directly from website
 
 ## Features
 
--Schedule the meeting
--Zooming and sliders of the images
+- Schedule the meeting
+- Zooming and sliders of the images
+- Support for mobile, tablet and desktop screens.
 
 ### Existing Features
 
--Schedule the meeting
+- Schedule the meeting
 Allows users to schedule a meeting using third party app from:
 ```
 calendly.com
 ```
--Zooming and sliders of the images  
+- Zooming and sliders of the images  
 Allows users to zoom images on the page, is achieved by viewerjs:
 ```
 https://github.com/fengyuanchen/viewerjs
@@ -39,11 +40,11 @@ Elements on site are positioned using css, it could be better to use bootstrap g
 ## Technologies Used
 
 languages:
--HTML
--Css
--JavaScript
+- HTML
+- Css
+- JavaScript
 
-Dependencies
+# Dependencies
 
 Viewerjs:
 ```
@@ -56,7 +57,7 @@ https://www.calendly.com
 ## Testing
 
 Site was tested using Chromium 68.0.3440.84 Arch Linux,
-Tested on mobile, tablet and desktop sizes,
+Tested on mobile, tablet and desktop sizes.
 
 ## Deployment
 
