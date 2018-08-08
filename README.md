@@ -67,7 +67,7 @@ https://migacz85.github.io/resume/
 ```
 If you want to run code locally run
 ```
-https://github.com/Migacz85/resume.git
+git clone https://github.com/Migacz85/resume.git
 ```
 
 ### Media
