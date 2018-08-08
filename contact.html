@@ -32,12 +32,12 @@
     <header>
       <nav class="main-nav">
         <ul>
-          <li><a class='alert alert-success' href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a> </li>
+          <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a> </li>
           <li><a href="education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>
           <!-- <li><a href="experience.html"><span class="glyphicon glyphicon-fire"></span> Experience</a></li> -->
           <!-- <li><a href=""><span class="glyphicon glyphicon-stats"></span> Interests</a></li> -->
           <li><a href="skills.html"><span class="glyphicon glyphicon-list-alt"></span> Skills</a></li>
-          <li><a href="contact.html"><span class="glyphicon glyphicon-list-alt"></span> Contact</a></li>
+          <li><a class='alert alert-success' href="contact.html"><span class="glyphicon glyphicon-list-alt"></span> Contact</a></li>
         </ul>
       </nav>
       <h1> Marcin Mrugacz</h1>
@@ -56,45 +56,26 @@
       <!-- Section for informations -->
       <article class='Display-content'>
         <section>
-          <h2 class="alert alert-success"><span class="glyphicon glyphicon-home"> Home</h2>
-
-          <p> I'm really happy to see you on my site. This simple webpage will tell you more about me and my experience in the past. Is showing also part of my skills of html and css coding because everthing here was coded by me.</p>
-          <br>
-          <h3 class="alert alert-primary" role="alert"> Education </h3>
-          <p>In section education you will see where exactly I was studing and when it was. </p>
-          <br>
-          <h3 class="alert alert-primary" role="alert"> Skills </h3>
-          <p>Here you will find out more about my skills, and programming languages i know.</p>
-          <!-- <h3 class="alert alert-primary" role="alert"> Experience </h3>
-          <p>In section experience you can see where I was working and where I work right now. </p>
-          <br>
-          <h3 class="alert alert-primary" role="alert">Interests</h3>
-          <p>In section Interests you will find information about things I like to do in my free time, and my hobbies. </p> -->
-          <h3 class="alert alert-primary">Mind Maps</h3>
-          <div>
-            <img id="image" src="" alt="Picture" style="display:none">
-          </div>
-
-          <div>
-            <ul id="images">
-              <li><img src="Pictures/Css.jpg" style="width:100px;" alt="Picture 1"></li>
-              <li><img src="Pictures/Properties css.jpg" style="width:100px;" alt="Picture 2"></li>
-              <li><img src="Pictures/ux.png" style="width:100px;" alt="Picture 2"></li>
-              <!-- <li><img src="picture-3.jpg" alt="Picture 3"></li> -->
-            </ul>
-          </div>
+          <h2><span class="glyphicon glyphicon-home"> Contact</h2>
+          <h3>Schedule a meeting with me:</h3>
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/migacz85/30min" style="min-width:320px;height:500px; }"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+          <!-- Calendly inline widget end -->
+          <h3>Or send e-mail</h3>
+          <li class='compose-mailto'><a href="mailto:migacz85@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Compose e-mail</a></li>
         </section>
       </article>
     </main>
 
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-end">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        <li class="page-item">
+          <a class="page-link" href="skills.html" tabindex="-1">Previous</a>
         </li>
 
-        <li class="page-item">
-          <a class="page-link" href="education.html">Next</a>
+        <li class="page-item disabled">
+          <a class="page-link" href="">Next</a>
         </li>
       </ul>
     </nav>
@@ -104,12 +85,12 @@
     <div class='footer-wrapper'>
       <nav>
         <ul>
-          <li><a class='alert alert-success' href="home.html"><span class="glyphicon glyphicon-home"></span>  Home</a> </li>
+          <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a> </li>
           <!-- <li><a href="experience.html"><span class="glyphicon glyphicon-fire"></span> Experience</a></li> -->
           <li><a href="education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>
           <li><a href="skills.html"><span class="glyphicon glyphicon-stats"></span> Skills</a></li>
           <!-- <li><a href=""><span class="glyphicon glyphicon-list-alt"></span> Resume</a></li> -->
-          <li><a href="contact.html"><span class="glyphicon glyphicon-list-alt"></span> Contact</a></li>
+          <li><a class='alert alert-success' href="contact.html"><span class="glyphicon glyphicon-list-alt"></span> Contact</a></li>
         </ul>
       </nav>
       <ul class='icons'>
@@ -123,6 +104,7 @@
       <p> © Marcin Mrugacz 2018</p>
     </div>
   </footer>
+
   <script>
     // View a list of images
     var viewer = new Viewer(document.getElementById('images'));

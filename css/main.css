@@ -22,7 +22,7 @@ h1 {
    -webkit-box-shadow: 0px 10px 60px #777;
            box-shadow: 0px 10px 60px #777;
    font-size: 1, 1em;
-    margin: 25px 0 43px; 
+    margin: 25px 0 43px;
  }
  h2 {
    padding-bottom:20px;
@@ -31,6 +31,13 @@ h1 {
 
    background-color: white;
    border-radius: 10px;
+}
+h3 {
+  padding-bottom: 20px;
+     padding-top:20px;
+}
+body > div > main > article > section > li > a {
+  color: #2ab0ff;
 }
 ul {
   margin: 0;
@@ -148,6 +155,10 @@ footer div ul li {
   opacity: 1;
   width:auto;
    margin: 0 25px 20px;
+}
+/*for calendly */
+.branding .badge {
+  display:none;
 }
 
 /* DESKTKOP */
